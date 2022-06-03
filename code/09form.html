@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form learning</title>
+</head>
+<body>
+<!--
+form
+action: where the form is submitted
+method: post, get
+get: submitted information can be seen in the url, unsafe but efficient
+post: safe, large file can be submitted
+-->
+<form action="01fundamental.html" method="get">
+<!--textbox input-->
+<p>usr: <input type="text" name="Username"></p>
+<p>pwd: <input type="password" name="Password"></p>
+<!--
+radio
+value: value of radio
+name: group
+-->
+    <p>
+        Sex:
+    <input type='radio' name="sex"/>Male
+    <input type="radio" name="sex"/>Female
+    </p>
+<!--
+checkbox
+-->
+    <p>
+        Hobby:
+        <input type="checkbox" name="hobby" value="coding" checked>coding
+        <input type="checkbox" name="hobby" value="gaming">gaming
+        <input type="checkbox" name="hobby" value="sing">sing
+    </p>
+
+<!--button-->
+    <p>
+        Button:
+        <input type="button" name="bt1" value="THIS IS A BUTTON"> </p>
+    <p>
+        <input type="image" src="../resources/img/1.jpeg" width="200"></input>
+    </p>
+<!--    <p>-->
+<!--        <input type="submit">-->
+<!--        <input type="reset">-->
+<!--    </p>-->
+<!--dropdown box-->
+    <p>
+        dropdown box:
+        <select name="state">
+            <option value="NSW" selected>NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="W">W</option>
+        </select>
+    </p>
+<!--text field-->
+    <p>
+        feedback:
+        <textarea name="textarea" cols="50", rows="10">tell us how your feel</textarea>
+    </p>
+
+<!--file field-->
+    <p>
+        <input type="file" name="files">
+        <input type="button" value="upload" name="uploadButton">
+    </p>
+
+<!--email-->
+    <p>
+        Email:
+        <input type="email" name="email"></input>
+    </p>
+
+<!--URL-->
+    <p>
+        URL:
+        <input type="url" name="url"></input>
+    </p>
+
+<!--Number-->
+    <p>
+        Number:
+        <input type="number" name="number" max="100" min="0" step="1">
+    </p>
+
+<!--slider-->
+    <p>
+        Volume:
+        <input type="range" name="volume" min="0" max="100" step="2">
+    </p>
+
+<!--search box-->
+    <p>
+        <input type="search" name="search"></input>
+    </p>
+    
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+<!--enhancing mouse usability-->
+    <p>
+        <label for="email01">Entering your email:</label>
+        <input type="email" id="email01" name="email">
+    </p>
+
+<!--Primary validation of form-->
+
+<!--placeholder-->
+    <p>
+        USR:
+        <input type="text" name="user" placeholder="plz enter your name">
+    </p>
+<!--required-->
+    <p>
+        PWD:
+    <input type="password" name="pwd" required>
+    </p>
+
+<!--pattern-->
+    <p>
+        EMAIL:
+        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+    </p>
+</form>
+</body>
+</html>
