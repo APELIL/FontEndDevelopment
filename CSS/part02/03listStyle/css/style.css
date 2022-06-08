@@ -1,0 +1,40 @@
+body{
+    /* background-color: #D9AFD9; */
+    background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    width: 2000px;
+    height: 2000px;
+}
+h2{
+    text-indent: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:bisque url("../img/amazonlog.png") 200px -4px no-repeat;
+}   
+ul{
+    background: gray;
+   
+    
+}
+ul li{
+   list-style-type:none;
+   line-height: 30px;
+   background-image: url("../img/right.png");
+   background-repeat: no-repeat;
+   background-position: 206px 9px;
+}
+a{
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:orange;
+}
+a:hover{ 
+    color: aliceblue;
+}
+#nav{
+    width: 260px;
+}
+/* #test{
+    width: 1000px;
+    height: 1000px;
+    
+    background-image: url("../img/amazonlog.png");
+} */

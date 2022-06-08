@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .demo a{
+        background:gray;
+        text-decoration: none;
+        display: block;
+        width:50px;
+        height: 50px;
+        float:left;
+        color:brown;
+        text-align: center;
+        margin-left: 5px;
+        border-radius: 5px;
+        font: bold 20px/50px Arial;
+    }
+    /* there are some examples to illustrate how we use attribute selector */
+
+    /*select id is not null*/
+    a[id]{
+        background: yellow;
+    }
+
+    /* select id = class */
+    a[id=class]{
+        background: green;
+    }
+
+    /* select class includes links */
+    a[class*=links]{
+        background: yellow;
+    }
+
+    /* select target */
+    a[target]{
+        background:yellow;
+    }
+
+    /* select href start with http */
+    a[href^=http]{
+        background:yellow;
+    }
+
+    /* select class end with last */
+    a[class$=last]{
+        background:yellow;
+    }
+</style>
+<body>
+    <p class="demo">
+    <a href="http://www.google.com" class="links item first" id="class">1</a>
+    <a href="http://www.baidu.com" class="links item active" target="_blank" title="test">2</a>
+    <a href="" class="links item active">3</a>
+    <a href="" class="links item">4</a>
+    <a href="" class="links item">5</a>
+    <a href=".pdf" class="links item">6</a>
+    <a href=".pdf" class="links item">7</a>
+    <a href="" class="links item">8</a>
+    <a href="" class="links item">9</a>
+    <a href=""class="links item last">10</a>
+</p>
+</body>
+</html>
